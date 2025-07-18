@@ -9,7 +9,7 @@ import CampusMap from '../components/CampusMap';
 import ResourcesSection from '../components/ResourcesSection';
 import MarketplaceSection from '../components/MarketplaceSection';
 import UserProfile from '../components/UserProfile';
-import Message  from '../components/Message';
+import { MessagingInterface } from '../components/MessagingInterface';
 import { Button } from '@/components/ui/button';
 
 const Index = () => {
@@ -125,6 +125,8 @@ const Index = () => {
         return <CampusMap />;
       case 'resources':
         return <ResourcesSection />;
+      case 'messages':
+        return <MessagingInterface />;
       case 'marketplace':
         return <MarketplaceSection />;
       default:

@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Home, Search, MapPin, Calendar, ShoppingBag, AlertTriangle } from 'lucide-react';
+import { Home, Search, MapPin, Calendar, ShoppingBag, AlertTriangle, MessageCircle } from 'lucide-react';
 
 interface NavigationProps {
   activeSection: string;
@@ -13,7 +13,7 @@ const Navigation = ({ activeSection, onSectionChange }: NavigationProps) => {
     { id: 'lost-found', label: 'Lost & Found', icon: AlertTriangle },
     { id: 'map', label: 'Campus Map', icon: MapPin },
     { id: 'resources', label: 'Resources', icon: Calendar },
-    { id: 'Message', label: 'Message', icon: Calendar },
+    { id: 'messages', label: 'Messages', icon: MessageCircle },
     { id: 'marketplace', label: 'Marketplace', icon: ShoppingBag },
   ];
 

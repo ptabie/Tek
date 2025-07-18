@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Home, MapPin, Calendar, ShoppingBag, AlertTriangle } from 'lucide-react';
+import { Home, MapPin, Calendar, ShoppingBag, AlertTriangle, MessageCircle } from 'lucide-react';
 
 interface MobileNavigationProps {
   activeSection: string;
@@ -11,6 +11,7 @@ const MobileNavigation = ({ activeSection, onSectionChange }: MobileNavigationPr
   const navItems = [
     { id: 'home', label: 'Home', icon: Home },
     { id: 'lost-found', label: 'Lost', icon: AlertTriangle },
+    { id: 'messages', label: 'Messages', icon: MessageCircle },
     { id: 'map', label: 'Map', icon: MapPin },
     { id: 'resources', label: 'Resources', icon: Calendar },
     { id: 'marketplace', label: 'Market', icon: ShoppingBag },
