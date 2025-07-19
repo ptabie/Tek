@@ -497,10 +497,10 @@ const Settings = () => {
             </CardHeader>
             <CardContent className="space-y-4">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <Button variant="outline">Help Center</Button>
-                <Button variant="outline">Contact Support</Button>
-                <Button variant="outline">Privacy Policy</Button>
-                <Button variant="outline">Terms of Service</Button>
+                <Button variant="outline" onClick={() => navigate('/help')}>Help Center</Button>
+                <Button variant="outline" onClick={() => navigate('/contact-support')}>Contact Support</Button>
+                <Button variant="outline" onClick={() => navigate('/privacy-policy')}>Privacy Policy</Button>
+                <Button variant="outline" onClick={() => navigate('/terms-of-service')}>Terms of Service</Button>
               </div>
             </CardContent>
           </Card>
